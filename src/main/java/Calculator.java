@@ -17,18 +17,6 @@ public class Calculator {
     }
 
     public int div(int operand1, int operand2) {
-        try {
-            return operand1 / operand2;
-        } catch (DivideByZero e) {
-            e.printStackTrace();
-            return 0;
-        }
+        return operand1 / operand2;
     }
-
-    public static class DivideByZero extends ArithmeticException {
-        public DivideByZero(String errorMessage) {
-            throw new DivideByZero("/ by zero");
-        }
-    }
-
 }

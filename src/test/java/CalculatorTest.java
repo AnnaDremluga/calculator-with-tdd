@@ -1,3 +1,4 @@
+import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
@@ -76,5 +77,4 @@ public class CalculatorTest {
         Exception exception = assertThrows(ArithmeticException.class, () -> calculator.div(1, 0));
         assertEquals("/ by zero", exception.getMessage());
     }
-
 }
